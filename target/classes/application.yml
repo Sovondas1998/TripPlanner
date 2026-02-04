@@ -1,0 +1,22 @@
+server:
+  port: 8080   # Application will run on this port
+
+# JWT configuration (used by JwtUtil)
+jwt:
+  secret: my-super-secret-key-my-super-secret-key
+  # Secret key used to sign JWTs (must be long & secure)
+  expiration: 3600000
+  # Token validity time in milliseconds (1 hour)
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tripplanner
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Automatically create/update tables
+    show-sql: true       # Show SQL queries in console
+    open-in-view: false  # Prevent lazy-loading issues
