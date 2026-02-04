@@ -8,6 +8,7 @@ import com.example.tripplanner.model.User;
 import java.util.List;
 import java.util.UUID;
 
+
 public interface TripService {
 
     /**
